@@ -38,7 +38,7 @@ ADD default.conf /etc/nginx/conf.d/default.conf
 # Adding the configuration file of the Supervisor
 ADD supervisord.conf /etc/
 
-RUN echo "<?php phpinfo();" >> /var/www/index.php
+RUN echo "<?php phpinfo();" > /var/www/index.php
 
 EXPOSE 80
 
