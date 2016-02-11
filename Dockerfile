@@ -17,6 +17,7 @@ RUN yum -y install  tar \
             git \
             make \
             php-pgsql \
+            php-mysqld \
             python-setuptools; yum clean all
 RUN yum -y nginx; yum clean all
 # Installing supervisor
